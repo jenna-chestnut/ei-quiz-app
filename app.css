@@ -1,8 +1,64 @@
-/* Your styles should be mobile-first and responsive */
+body {
+  font-family: arial;
+  text-align: center;
+  margin: 0;
+}
 
-/** 
-  * If you are unclear on how to utilize a mobile-first, responsive technique to write your CSS, here is an example: 
-  *
-  * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
-  *
-*/
+header {
+  background-color: lightblue;
+  padding: 40px;
+}
+
+.block {
+  border: 1px solid grey;
+  width: 75%;
+  margin: auto;
+}
+
+button,
+.questions label {
+  width: 50%;
+  padding: 10px;
+  display: block;
+  margin: 3% auto;
+  background-color: lightgrey;
+  border: 1px solid darkslategrey;
+}
+
+#beginQuiz span {
+  text-align: left;
+  transform: rotate(350deg);
+  background-color: white;
+}
+
+img {
+  width: 90%;
+}
+
+input[type="submit"] {
+  padding: 10px;
+}
+
+.tally {
+  text-align: right;
+  padding-right: 3%;
+}
+
+.questions input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.questions input[type="radio"]:checked + label {
+  background-color: white;
+}
+
+button:hover,
+.questions input[type="radio"]:hover + label {
+  background-color: orange;
+}
+
+.questions input[type="radio"]:focus + label {
+  background-color: lightblue;
+}
